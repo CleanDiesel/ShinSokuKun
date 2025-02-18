@@ -1,6 +1,10 @@
 # ShinSokuKun
 
-Application for forest survey mapping.
+Python application for forest survey mapping.
+
+Surveying calculation API by Geospatial Information Authority of Japan is used. (https://vldb.gsi.go.jp/sokuchi/surveycalc/main.html)
+
+* `gpx_to_fox.py` Sort gpx tracks and waypoints, then convert to `fox.exe (software for survey drawing)` input text.
 
 ## Installation
 
@@ -19,11 +23,12 @@ pip3 install gpxpy requests
 
 ## Usage
 
-
+### gpx_to_fox.py
 
 ```bash
 # Run the application
-npm start
+python3 gpx_to_fox.py hoge1.gpx (hoge2.gpx hoge3.gpx ...)
+# Then follow dialog
 ```
 
 ## Contributing
